@@ -28,14 +28,8 @@ jobs:
         env:
           RAILWAY_TOKEN: ${{ secrets.RAILWAY_TOKEN }}
         run: |
-          echo "$RAILWAY_TOKEN"
+          echo "$RAILWAY_TOKEN" | railway login --browserless
 
       - name: Deploy to Railway
         run: |
           railway up
-
-      - name: Deploy to Railway
-        env:
-          RAILWAY_TOKEN: ${{ secrets.RAILWAY_TOKEN }}
-        run: |
-          railway up --token $RAILWAY_TOKEN
