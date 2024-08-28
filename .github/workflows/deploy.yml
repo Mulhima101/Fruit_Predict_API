@@ -24,11 +24,8 @@ jobs:
         run: |
           bash <(curl -fsSL cli.new)
                
-      - name: Authenticate Railway
+      - name: Deploy to Railway
         env:
           RAILWAY_TOKEN: ${{ secrets.RAILWAY_TOKEN }}
-        run: |
-
-      - name: Deploy to Railway
         run: |
           railway up
