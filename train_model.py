@@ -22,7 +22,7 @@ model.compile(optimizer='adam',
               metrics=['accuracy'])
 
 # Train the model
-model.fit(train_images, train_labels, epochs=2)
+model.fit(train_images, train_labels, epochs=1)
 
 # Save the model
 model.save('mnist_model.h5')
