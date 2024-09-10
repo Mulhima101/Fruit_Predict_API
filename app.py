@@ -125,7 +125,7 @@ def preprocess_image(img_data, target_size=(100, 100)):
 
 @app.get("/")
 async def predict():
-    return "Use Postment to upload a image and see the results"
+    return "Use Postment to upload a image and see the results."
 
 @app.post("/")
 async def predict(file: UploadFile = File(...)):
