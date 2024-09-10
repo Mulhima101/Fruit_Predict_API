@@ -1,4 +1,6 @@
 fastapi
 numpy
+Pillow
+Requests
 tensorflow
-uvicorn
+python-multipart
